@@ -186,6 +186,11 @@ export class MarkerClusterer extends React.PureComponent {
     /**
      * function
      */
+    onRightClick: PropTypes.func,
+
+    /**
+     * function
+     */
     onClusteringBegin: PropTypes.func,
 
     /**
@@ -272,6 +277,7 @@ export default MarkerClusterer
 
 const eventMap = {
   onClick: "click",
+  onRightClick: "rightclick",
   onClusteringBegin: "clusteringbegin",
   onClusteringEnd: "clusteringend",
   onMouseOut: "mouseout",

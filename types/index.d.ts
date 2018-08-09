@@ -105,6 +105,7 @@ declare module 'react-google-maps/lib/components/addons/MarkerClusterer' {
         zoomOnClick?:	boolean
 
         onClick?(cluster: Cluster): void
+        onRightClick?(e: google.maps.MouseEvent): void
         onClusteringBegin?(mc: MarkerClusterer): void
         onClusteringEnd?(mc: MarkerClusterer): void
         onMouseOut?(c: Cluster): void
